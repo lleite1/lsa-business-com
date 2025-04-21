@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacte-nos – LSA BUSINESS STORE LDA</title>
+  <style>
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+    body { margin: 0; font-family: 'Arial', sans-serif; }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #004080;
+      padding: 10px;
+      z-index: 999;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #004080;
+    }
+
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .info p {
+      margin: 8px 0;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Início</a>
+  <a href="sobre.html">Sobre Nós</a>
+  <a href="contactos.html">Contacte-nos</a>
+</nav>
+
+<main>
+  <h1>Contacte-nos</h1>
+  <div class="info">
+    <p><strong>Endereço:</strong> Namialo, Nampula – Moçambique</p>
+    <p><strong>Telefone:</strong> +258 871 412 022 / 861 635 665 / 870 654 781</p>
+    <p><strong>Email:</strong> lsa.bsinfo@gmail.com</p>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 LSA BUSINESS STORE LDA. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
