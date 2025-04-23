@@ -2,109 +2,62 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Localização - LSA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Localização | LSA BUSINESS STORE LDA</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .map-container {
-      position: relative;
-      padding-bottom: 56.25%; /* Proporção 16:9 */
-      height: 0;
-      overflow: hidden;
-    }
-    .map-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-    .contact-section {
-      padding: 20px;
-      background-color: #f9f9f9;
-    }
-    .contact-section h2 {
-      margin-top: 0;
-    }
-    .contact-form {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .contact-form label {
-      display: block;
-      margin-top: 10px;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      box-sizing: border-box;
-    }
-    .contact-form button {
-      margin-top: 10px;
-      padding: 10px 20px;
-    }
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    footer .footer-map {
-      margin-top: 10px;
-    }
-    footer .footer-map iframe {
-      width: 100%;
-      height: 200px;
-      border: 0;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background: #003366; color: #fff; text-align: center; padding: 10px 0; }
+    nav a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; }
+    h1, h2 { color: #003366; text-align: center; }
+    .container { padding: 20px; max-width: 1000px; margin: auto; }
+    iframe { width: 100%; border: none; }
+    form { max-width: 600px; margin: 30px auto; }
+    input, textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; }
+    button { background: #003366; color: #fff; padding: 10px 20px; border: none; cursor: pointer; }
+    ul { list-style-type: disc; padding-left: 20px; }
+    .footer-map iframe { width: 100%; height: 200px; }
   </style>
 </head>
 <body>
 
-  <h1>Localizações da LSA</h1>
+<header>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre Nós</a>
+    <a href="contactos.html">Contacte-nos</a>
+    <a href="localizacao.html">Localização</a>
+  </nav>
+</header>
 
-  <div class="map-container">
-    <iframe src="https://www.google.com/maps/d/embed?mid=1a2b3c4d5e6f7g8h9i0j" allowfullscreen></iframe>
+<main class="container">
+  <h1>Localização Atual</h1>
+  <p>A sede da LSA BUSINESS STORE LDA está localizada em Namialo, Nampula – Moçambique:</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.130223508469!2d39.9780148!3d-14.9241007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18c78b005c6532e9%3A0x3940b16dfae871be!2sA%20GARRAFEIRA%20DA%20ESTA%C3%87%C3%83O!5e0!3m2!1sen!2smz!4v1712950000000!5m2!1sen!2smz" height="400" allowfullscreen="" loading="lazy"></iframe>
+
+  <h2>Futuras Filiais</h2>
+  <ul>
+    <li><strong>Nacala-Porto</strong> – em breve</li>
+    <li><strong>Nampula Cidade</strong> – em breve</li>
+  </ul>
+
+  <h2>Como Chegar</h2>
+  <p>Estamos próximos à estrada principal de Namialo. Fácil acesso por transporte público e há estacionamento disponível.</p>
+
+  <h2>Formulário de Contacto</h2>
+  <form action="https://formspree.io/f/xayzkbqb" method="POST">
+    <input type="text" name="nome" placeholder="Seu nome" required>
+    <input type="email" name="email" placeholder="Seu email" required>
+    <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</main>
+
+<footer>
+  <p>&copy; 2025 LSA BUSINESS STORE LDA. Todos os direitos reservados.</p>
+  <div class="footer-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.130223508469!2d39.9780148!3d-14.9241007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18c78b005c6532e9%3A0x3940b16dfae871be!2sA%20GARRAFEIRA%20DA%20ESTA%C3%87%C3%83O!5e0!3m2!1sen!2smz!4v1712950000000!5m2!1sen!2smz" allowfullscreen="" loading="lazy"></iframe>
   </div>
-
-  <div class="contact-section">
-    <h2>Como Chegar</h2>
-    <p>Nossas filiais estão localizadas em:</p>
-    <ul>
-      <li><strong>Nampula Cidade:</strong> Rua Exemplo, 123</li>
-      <li><strong>Nacala-Porto:</strong> Avenida Modelo, 456</li>
-    </ul>
-    <p>Para chegar até nós, você pode utilizar transporte público ou estacionamento disponível nas proximidades.</p>
-
-    <div class="contact-form">
-      <h2>Entre em Contato</h2>
-      <form action="mailto:lsa.bsinfo@gmail.com" method="post" enctype="text/plain">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Mensagem:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 LSA - Todos os direitos reservados.</p>
-    <div class="footer-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." allowfullscreen></iframe>
-    </div>
-  </footer>
+</footer>
 
 </body>
 </html>
