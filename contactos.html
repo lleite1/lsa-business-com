@@ -1,79 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacte-nos – LSA BUSINESS STORE LDA</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacte-nos - LSA Business Store</title>
   <style>
-    * { box-sizing: border-box; scroll-behavior: smooth; }
-    body { margin: 0; font-family: 'Arial', sans-serif; }
-
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #004080;
-      padding: 10px;
-      z-index: 999;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
       text-align: center;
     }
-
+    nav {
+      background-color: #00509e;
+      padding: 10px;
+      text-align: center;
+    }
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
     }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
     main {
-      max-width: 800px;
-      margin: 80px auto;
       padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background-color: white;
+      border-radius: 8px;
     }
-
-    h1 {
-      color: #004080;
+    h2 {
+      color: #003366;
     }
-
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #00509e;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #003f7d;
+    }
     footer {
-      background: #f4f4f4;
+      background-color: #003366;
+      color: white;
       text-align: center;
-      padding: 20px;
+      padding: 15px;
       margin-top: 40px;
-    }
-
-    .info p {
-      margin: 8px 0;
     }
   </style>
 </head>
 <body>
 
+<header>
+  <h1>LSA BUSINESS STORE LDA</h1>
+</header>
+
 <nav>
   <a href="index.html">Início</a>
   <a href="sobre.html">Sobre Nós</a>
-  <a href="contactos.html">Contacte-nos</a>
+  <a href="localizacao.html">Localização</a>
+  <a href="contacte-nos.html">Contacte-nos</a>
 </nav>
 
 <main>
-  <h1>Contacte-nos</h1>
-  <div class="info">
-    <p><strong>Endereço:</strong> Namialo, Nampula – Moçambique</p>
-    <p><strong>Telefone:</strong> +258 871 412 022 / 861 635 665 / 870 654 781</p>
-    <p><strong>Email:</strong> lsa.bsinfo@gmail.com</p>
-  </div>
+  <h2>Formulário de Contacto</h2>
+  <p>Preencha o formulário abaixo para entrar em contacto connosco:</p>
+
+  <form action="https://formsubmit.co/lsa.bsinfo@gmail.com" method="POST">
+    <label for="name">Nome:</label>
+    <input type="text" name="name" id="name" required />
+
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" id="email" required />
+
+    <label for="message">Mensagem:</label>
+    <textarea name="message" id="message" rows="5" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
 </main>
 
 <footer>
-  <p>&copy; 2025 LSA BUSINESS STORE LDA. Todos os direitos reservados.</p>
-  <p>
-    Localização: <a href="https://www.google.com/maps/place/A+GARRAFEIRA+DA+ESTA%C3%87%C3%83O/@-14.9241007,39.9780148,17z" target="_blank">
-    Estrada Nacional n1, Estação de Nampula, Namialo, Nampula, Moçambique</a>
-  </p>
+  © 2025 LSA BUSINESS STORE LDA. Todos os direitos reservados.
 </footer>
 
 </body>
